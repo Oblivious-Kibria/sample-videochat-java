@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.fragment.PlasmaParentFragment">
+
+    <LinearLayout
+        android:layout_marginEnd="@dimen/value_20dp"
+        android:layout_marginStart="@dimen/value_20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/value_10dp"
+        android:background="@drawable/backgrpund_shape_10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/allPost"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button_navy_blue_large"
+            android:gravity="center"
+            android:padding="@dimen/value_5dp"
+            android:text="All Post"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_15sp" />
+
+        <TextView
+            android:id="@+id/myPost"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/value_5dp"
+            android:text="My Post"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_15sp" />
+
+    </LinearLayout>
+    <FrameLayout
+        android:layout_marginTop="@dimen/value_5dp"
+        android:id="@+id/plasmaContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom">
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cell"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/value_2dp"
+    android:layout_marginTop="@dimen/value_2dp"
+    android:layout_marginRight="@dimen/value_2dp"
+    android:layout_marginBottom="@dimen/value_5dp"
+    android:background="@drawable/backgrpund_border"
+    android:minHeight="?android:attr/listPreferredItemHeightSmall"
+    android:orientation="vertical"
+    android:padding="@dimen/value_5dp"
+    android:paddingTop="@dimen/value_10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/value_10dp">
+
+        <!--    <com.github.florent37.shapeofview.shapes.CircleView-->
+        <!--        android:layout_width="@dimen/value_50dp"-->
+        <!--        android:layout_height="@dimen/value_50dp"-->
+        <!--        app:shape_circle_borderColor="@color/grey"-->
+        <!--        app:shape_circle_borderWidth="1dp">-->
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="@dimen/value_60dp"
+            android:layout_height="@dimen/value_60dp"
+            android:padding="@dimen/value_10dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ambulance" />
+
+        <!--    </com.github.florent37.shapeofview.shapes.CircleView>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/value_20dp"
+                android:paddingEnd="@dimen/value_20dp">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@+id/time"
+                    android:text="AFC Ambulance"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_17sp" />
+                <!--            <TextView-->
+                <!--                android:id="@+id/time"-->
+                <!--                android:layout_alignParentEnd="true"-->
+                <!--                android:text="4.05AM"-->
+                <!--                android:layout_width="wrap_content"-->
+                <!--                android:layout_height="wrap_content" />-->
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/value_20dp"
+                android:layout_marginTop="@dimen/value_3dp"
+                android:layout_marginEnd="@dimen/value_20dp"
+                android:text="@string/rent"
+                android:textSize="@dimen/text_size_15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/value_20dp"
+                android:layout_marginTop="@dimen/value_3dp"
+                android:layout_marginEnd="@dimen/value_20dp"
+                android:text="Gulshan 1, Dhaka"
+                android:textSize="@dimen/text_size_15sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/value_20dp"
+                android:layout_marginTop="@dimen/value_3dp"
+                android:layout_marginEnd="@dimen/value_20dp"
+                android:text="01762727727"
+                android:textSize="@dimen/text_size_15sp" />
+
+            <RelativeLayout
+                android:layout_marginStart="@dimen/value_20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="@dimen/value_3dp"
+                    android:text="@string/total_trip"
+                    android:textSize="@dimen/text_size_15sp" />
+                <Button
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="end"
+                    android:id="@+id/bookNow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/value_30dp"
+                    android:background="@drawable/background_border_line"
+                    android:gravity="center"
+                    android:text="Book Now"
+                    android:textAllCaps="false"
+                    android:textColor="@color/app_color"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    <!--    <View-->
+    <!--        android:id="@+id/viewLine"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="1dp"-->
+    <!--        android:layout_marginTop="@dimen/value_3dp"-->
+    <!--        android:layout_marginLeft="@dimen/value_20dp"-->
+    <!--        android:layout_marginRight="@dimen/value_3dp"-->
+    <!--        android:background="@color/app_color"/>-->
+
+</LinearLayout>

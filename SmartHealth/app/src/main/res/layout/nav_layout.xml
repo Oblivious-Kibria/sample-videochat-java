@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/barRelative1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_weight=".15"-->
+<!--        android:gravity="center"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:weightSum="1">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/dashBoardDesignationId"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight=".8"-->
+<!--            android:gravity="center"-->
+<!--            android:text="Menu"-->
+<!--            android:textColor="@android:color/white"-->
+<!--            android:textSize="18sp" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/iv_cross"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="@dimen/_4sdp"-->
+<!--            android:layout_gravity="center|right"-->
+<!--            android:layout_weight=".2"-->
+<!--            app:srcCompat="@drawable/ic_message" />-->
+<!--    </LinearLayout>-->
+    <LinearLayout
+        android:id="@+id/profile"
+        android:layout_weight=".20"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:padding="@dimen/value_10dp">
+
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/value_10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle_background"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/profile_image"
+                android:layout_width="@dimen/value_25dp"
+                android:layout_height="@dimen/value_25dp"
+                android:src="@drawable/ic_profile" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/value_10dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Jhon daniel"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/discount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/value_2dp"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="@dimen/value_3dp"
+                    android:paddingEnd="@dimen/value_10dp"
+                    android:paddingBottom="@dimen/value_3dp"
+                    android:text="Gold Member"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/left_drawer1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/value_1dp"
+        android:layout_weight=".6"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/left_drawer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:choiceMode="singleChoice"
+            android:divider="@android:color/transparent"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/value_5dp"
+        android:layout_weight=".15">
+
+<!--        <ImageView-->
+<!--            android:id="@+id/iv_user_image"-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="58dp"-->
+<!--            android:layout_alignStart="@+id/llDashYouTubeId1"-->
+<!--            android:background="@drawable/button_rectangle_shape_2"-->
+<!--            android:scaleType="centerCrop"-->
+<!--            app:srcCompat="@drawable/ic_delete_black_24dp" />-->
+
+        <TextView
+            android:paddingBottom="@dimen/value_5dp"
+            android:paddingTop="@dimen/value_5dp"
+            android:paddingEnd="@dimen/value_25dp"
+            android:paddingStart="@dimen/value_25dp"
+            android:layout_marginEnd="@dimen/value_10dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_button_shape"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Logout"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/value_10dp" />
+    </RelativeLayout>
+</LinearLayout>
+

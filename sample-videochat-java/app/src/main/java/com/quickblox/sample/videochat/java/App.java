@@ -3,6 +3,7 @@ package com.quickblox.sample.videochat.java;
 import android.app.Application;
 
 import com.crashlytics.android.Crashlytics;
+import com.quickblox.BuildConfig;
 import com.quickblox.auth.session.QBSettings;
 import com.quickblox.sample.videochat.java.util.QBResRequestExecutor;
 
@@ -10,10 +11,10 @@ import io.fabric.sdk.android.Fabric;
 
 public class App extends Application {
     //App credentials
-    private static final String APPLICATION_ID = "";
-    private static final String AUTH_KEY = "";
-    private static final String AUTH_SECRET = "";
-    private static final String ACCOUNT_KEY = "";
+    private static final String APPLICATION_ID = "84512";
+    private static final String AUTH_KEY = "yLVV6yprcDAcH--";
+    private static final String AUTH_SECRET = "DYrJOd7nzR63OPc";
+    private static final String ACCOUNT_KEY = "2C31UKMRzHyxhmfv8sab";
 
     public static final String USER_DEFAULT_PASSWORD = "quickblox";
 
